@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "NSFW Website Watchdog",
+  "version": "1.0",
+  "description": "Detects NSFW content in browser tabs.",
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "NSFW Watchdog"
+  },
+  "incognito": "spanning"
+}
